@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h1, h2 {
+    color: rgb(45, 86, 166);
+}
+
+/*can le cho User*/
+label {
+    float: left;
+    width: 8em; 
+    margin-bottom: 0.5em;
+    line-height: 1.5; 
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 3px;
+}
+
+/*fix label cho radio va checkbox*/
+label:has(input[type="radio"]), 
+label:has(input[type="checkbox"]) {
+    float: none;
+    width: auto;
+    display: inline-flex;  
+    align-items: center;
+    gap: 5px;              
+    margin-right: 1.5em;  
+    margin-bottom: 0.5em;
+    cursor: pointer;      
+}
+
+/* tat margin thua cua radio va checkbox */
+input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+}
+
+/* chinh label cho select */
+label:has(select) {
+    float: none;
+    width: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+select {
+    margin-left: 0.5em;
+    padding: 3px;
+}
+
+br {
+    clear: both;
+}
+
+/* nut submit */
+#submit {
+    margin-left: 0.5em;
+    padding: 4px 15px;
+    cursor: pointer;
+}
